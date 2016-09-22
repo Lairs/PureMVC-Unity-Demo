@@ -8,9 +8,9 @@ public class Count2Proxy : PureMVC.Patterns.Proxy {
 
 	private int m_count;
 
-	public Count2Proxy(string proxyName)
-		: base(proxyName, null)
+	public Count2Proxy(string proxyName): base(proxyName, null)
 	{
+		
 	}
 
 	public override void OnRegister()

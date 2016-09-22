@@ -51,6 +51,7 @@ public class MediatorPlug : MonoBehaviour, IMediatorPlug {
 		
 	public string GetName(){
 		if( string.IsNullOrEmpty( mediatorName ) ){
+			//important : generate unique name by system.
 			mediatorName = System.Guid.NewGuid().ToString();
 		}
 		return mediatorName;

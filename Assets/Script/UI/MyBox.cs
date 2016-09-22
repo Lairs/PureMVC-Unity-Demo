@@ -9,7 +9,6 @@ public class MyBox : MonoBehaviour {
 	private Text label;
 
 	public System.Action onClick;
-	// Use this for initialization
 
 	void Start(){
 		Button btn = GetComponentInChildren<Button>();

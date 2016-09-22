@@ -34,7 +34,8 @@ public class Count1Mediator : PureMVC.Patterns.Mediator {
 	public override void OnRegister()
 	{
 		Debug.Log("OnRegister:" + MediatorName );
-		proxy = Facade.RetrieveProxy( CountProxy.NAME ) as CountProxy;
+		//Lairs:get UnityFacade
+		proxy = UnityFacade.GetInstance().RetrieveProxy( CountProxy.NAME ) as CountProxy;
 		box.onClick = OnClick;
 		box.UpdateLabel( proxy.GetCount().ToString() );
 	}

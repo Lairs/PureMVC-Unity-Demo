@@ -11,15 +11,16 @@ public class CreateCountBox : MonoBehaviour {
 		MediatorPlug box1 = Instantiate(countBoxPrefab).GetComponent<MediatorPlug>();
 		box1.transform.parent = group1;
 		box1.transform.localScale = Vector3.one;
+
 		box1.Connect( "Count1Mediator" );
 	}
 
 	public void CreateCount2Box () {
-		Transform group1 = transform.Find("Count2Group");
-		MediatorPlug box1 = Instantiate(countBoxPrefab).GetComponent<MediatorPlug>();
-		box1.transform.parent = group1;
-		box1.transform.localScale = Vector3.one;
-		box1.Connect( "Count2Mediator" );
+		Transform group2 = transform.Find("Count2Group");
+		MediatorPlug box2 = Instantiate(countBoxPrefab).GetComponent<MediatorPlug>();
+		box2.transform.parent = group2;
+		box2.transform.localScale = Vector3.one;
+		box2.Connect( "Count2Mediator" );
 	}
 
 }
